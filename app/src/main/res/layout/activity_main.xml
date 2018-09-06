@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/linearLayout"
+    android:weightSum="30">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:weightSum="1">
+
+            <TextView
+                    android:layout_width="292dp"
+                    android:layout_height="match_parent"
+                android:id="@+id/OCRTextView"
+                    android:textSize="30dp"
+                    android:textAlignment="center"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                android:layout_weight="0.70" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&lt;-"
+                android:id="@+id/Backbtn"
+                android:layout_weight="0.47"
+                android:onClick="backspace" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="292dp"
+            android:layout_height="match_parent"
+            android:id="@+id/AnswerTextView"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="0.70" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:id="@+id/clearBtn"
+            android:layout_weight="0.47"
+            android:onClick="clear" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/OCRTextView"
+        android:weightSum="1"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/OCR_button"
+            android:id="@+id/RunOCRbtn"
+            android:layout_weight="0.5"
+            android:nestedScrollingEnabled="true"
+            android:background="#14cd4b"
+            android:textColor="#ffffff"
+            android:textColorHighlight="#037425" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear_button"
+            android:id="@+id/button2"
+            android:layout_weight="0.5"
+            android:onClick="clearBitmap"
+            android:background="#14cd4b"
+            android:textColor="#ffffff"
+            android:textColorHighlight="#037425" />
+    </LinearLayout>
+
+
+</LinearLayout>

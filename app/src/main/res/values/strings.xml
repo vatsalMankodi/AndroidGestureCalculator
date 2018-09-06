@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GestureCalculator</string>
+    <string name="OCR_button">Run OCR</string>
+    <string name="clear_button">Clear</string>
+
+    <string name="title_activity_still_screen">StillScreen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
